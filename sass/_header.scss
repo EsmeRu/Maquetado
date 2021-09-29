@@ -18,10 +18,11 @@ $blue-gradient: linear-gradient(
 
 header {
   background-color: $bg-header;
-  padding: 2rem;
-  height: 100vh;
+  padding: 3%;
+  min-height: 100vh;
+
   nav {
-    @include centerContent(90%);
+    @include centerContent(90vw);
 
     ul {
       list-style-type: none;
@@ -42,11 +43,11 @@ header {
     }
   }
   .header-section {
-    @include centerContent(80%);
-    padding: 3rem 0;
+    @include centerContent(80vw);
+    padding: 4% 0;
 
     .header-section-content {
-      max-width: 32rem;
+      max-width: 50%;
       padding-right: 2rem;
       line-height: 1.5;
 
@@ -55,7 +56,6 @@ header {
       }
       h1 {
         font-weight: lighter;
-        font-size: xx-large;
         span {
           font-weight: bold;
         }

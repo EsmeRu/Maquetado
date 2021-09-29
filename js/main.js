@@ -35,7 +35,7 @@ const templateCard = function ({ title, subTitle, image, place, price }) {
                     <img src="${image}" alt="Logo Hermes">
                     <h4>${title}</h4>
                     <p>${subTitle}</p>
-                    <p class="place"><i class="fas fa-map-marker-alt"></i>${place}</p>
+                    <p class="place"><i class="fas fa-map-marker-alt"></i> ${place}</p>
                 </div>
 
                 <div class="card-foot">
@@ -46,7 +46,7 @@ const templateCard = function ({ title, subTitle, image, place, price }) {
                     <button><i class="fas fa-puzzle-piece"></i></button>
                 </div>
                 <div class="tooltip">
-                  <span class="tooltiptext">Be the first one to recomemend!</span>
+                  <p class="tooltiptext">Be the first one to recommend!</p>
                 </div>
             </div>`;
 };

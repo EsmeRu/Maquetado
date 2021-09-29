@@ -1,0 +1,32 @@
+@media screen and (min-width: 1500px) {
+  .header-section {
+    .image img {
+      min-width: 40rem;
+    }
+  }
+  a {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 4.5rem !important;
+  }
+  h3,
+  input,
+  i {
+    font-size: 2rem !important;
+  }
+  h4 {
+    font-size: 1.5rem !important;
+  }
+  p {
+    font-size: 1.3rem !important;
+  }
+  main {
+    .card {
+      flex-basis: calc(100% / 4 - 10rem);
+      .price {
+        font-size: 2rem !important;
+      }
+    }
+  }
+}
