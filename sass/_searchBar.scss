@@ -1,0 +1,47 @@
+$yellow-gradient: linear-gradient(
+  180deg,
+  rgba(250, 130, 67, 1) 0%,
+  rgba(255, 192, 85, 1) 50%,
+  rgba(251, 205, 81, 1) 100%
+);
+$shadow: -4px 30px 54px 24px rgba(0, 0, 0, 0.096);
+
+%spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form {
+  @extend %spaceBetween;
+  background-color: #fff;
+  margin-top: 3rem;
+  border-radius: 50px;
+  box-shadow: $shadow;
+  padding: 0.3rem;
+
+  input {
+    border: none;
+    width: 100%;
+    outline: none;
+    padding: 0.8rem;
+    border-radius: 50px;
+  }
+  button {
+    border: none;
+    background: $yellow-gradient;
+    padding: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: $shadow;
+    transition: 400ms;
+
+    i {
+      color: #fff;
+    }
+  }
+  button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+}

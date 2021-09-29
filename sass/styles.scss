@@ -1,0 +1,19 @@
+@use "header";
+@use "searchBar";
+@use "main";
+@use "footer";
+
+$font: sans-serif, Helvetica, Arial;
+// Colors
+$background: #fff;
+$primary: #ccc;
+
+* {
+  margin: 0;
+  font-family: $font;
+}
+h3 {
+  text-transform: uppercase;
+  color: $primary;
+  font-size: medium;
+}

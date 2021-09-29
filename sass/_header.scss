@@ -1,0 +1,65 @@
+// Colors
+$bg-header: #eff1f5;
+$primary: #ccc;
+$blue-gradient: linear-gradient(
+  90deg,
+  rgb(107, 123, 219) 0%,
+  rgb(136, 61, 223) 50%,
+  rgb(159, 34, 208) 100%
+);
+
+@mixin centerContent($width) {
+  max-width: $width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: $bg-header;
+  padding: 2rem;
+  height: 100vh;
+  nav {
+    @include centerContent(90%);
+
+    ul {
+      list-style-type: none;
+      display: flex;
+
+      li:nth-child(4) {
+        margin-right: 5rem;
+      }
+      a {
+        color: $primary;
+        text-decoration: none;
+        padding: 1rem;
+        border-radius: 50px;
+      }
+      a:hover {
+        background-color: rgba(204, 204, 204, 0.212);
+      }
+    }
+  }
+  .header-section {
+    @include centerContent(80%);
+    padding: 3rem 0;
+
+    .header-section-content {
+      max-width: 32rem;
+      padding-right: 2rem;
+      line-height: 1.5;
+
+      h3 {
+        padding-bottom: 1rem;
+      }
+      h1 {
+        font-weight: lighter;
+        font-size: xx-large;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
